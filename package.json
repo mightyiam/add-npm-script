@@ -1,6 +1,6 @@
 {
   "name": "add-npm-script",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Adds a provided script to `package.json`.",
   "main": "lib/index.js",
   "dependencies": {
