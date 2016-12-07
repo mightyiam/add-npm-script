@@ -4,14 +4,18 @@
   "description": "Adds a provided script to `package.json`.",
   "main": "lib/index.js",
   "dependencies": {
-    "read-pkg-up": "^2.0.0",
-    "write-pkg": "^2.0.0"
+    "modify-pkg-up": "^1.0.1"
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "decache": "^4.1.0",
+    "del": "^2.2.2",
+    "mkdir-promise": "^1.0.0",
     "mock-require": "^2.0.0",
+    "read-pkg-up": "^2.0.0",
     "simple-spy": "^2.0.4",
-    "standard": "^8.6.0"
+    "standard": "^8.6.0",
+    "write-pkg": "^2.0.0"
   },
   "scripts": {
     "lint": "standard",

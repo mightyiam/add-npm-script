@@ -7,8 +7,7 @@ Adds a provided script to `package.json`.
 
 ## Why?
 
-- [Reads closest `package.json`](https://www.npmjs.com/package/read-pkg-up)
-  and [writes](https://www.npmjs.com/package/write-pkg) to it.
+- [Reads and writes closest `package.json`](https://www.npmjs.com/package/modify-pkg-up)
 - Appropriate for set up of development tools
   like linters and test runners.
 
@@ -18,7 +17,8 @@ Adds a provided script to `package.json`.
 
 ```js
 const addNpmScript = require('add-npm-script')
-addNpmScript('wow', 'echo such nice. much like.'
+addNpmScript('wow', 'echo such nice. much like.')
+  .then(() => console.log('done'))
 ```
 
 ```console
@@ -35,4 +35,4 @@ such nice. much like.
 - `script`:
   script itself
 
-Is a synchronous function.
+Returns an empty promise.
