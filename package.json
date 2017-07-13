@@ -7,7 +7,7 @@
     "modify-pkg-up": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.20.0",
+    "ava": "^0.21.0",
     "decache": "^4.1.0",
     "del": "^3.0.0",
     "mkdir-promise": "^1.0.0",
