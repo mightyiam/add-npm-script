@@ -13,7 +13,7 @@
     "mkdir-promise": "^1.0.0",
     "mock-require": "^3.0.0",
     "read-pkg-up": "^3.0.0",
-    "simple-spy": "^2.0.4",
+    "simple-spy": "^2.2.1",
     "standard": "^11.0.0",
     "write-pkg": "^3.1.0"
   },
