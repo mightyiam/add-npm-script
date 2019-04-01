@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "ava": "^1.4.1",
-    "decache": "^4.1.0",
+    "decache": "^4.5.1",
     "del": "^4.0.0",
     "mkdir-promise": "^1.0.0",
     "mock-require": "^3.0.0",
