@@ -7,11 +7,11 @@
     "modify-pkg-up": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "decache": "^4.1.0",
+    "ava": "^1.4.1",
+    "decache": "^4.5.1",
     "del": "^4.0.0",
     "mkdir-promise": "^1.0.0",
-    "mock-require": "^3.0.0",
+    "mock-require": "^3.0.3",
     "read-pkg-up": "^5.0.0",
     "simple-spy": "^2.2.1",
     "standard": "^12.0.1",
