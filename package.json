@@ -9,7 +9,7 @@
   "devDependencies": {
     "ava": "^2.1.0",
     "decache": "^4.5.1",
-    "del": "^4.0.0",
+    "del": "^5.0.0",
     "mkdir-promise": "^1.0.0",
     "mock-require": "^3.0.3",
     "read-pkg-up": "^5.0.0",
