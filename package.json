@@ -4,7 +4,7 @@
   "description": "Adds a provided script to `package.json`.",
   "main": "lib/index.js",
   "dependencies": {
-    "modify-pkg-up": "^1.0.1"
+    "modify-pkg-up": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^2.1.0",
