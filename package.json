@@ -1,26 +1,38 @@
 {
   "name": "add-npm-script",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Adds a provided script to `package.json`.",
   "main": "lib/index.js",
   "dependencies": {
-    "modify-pkg-up": "^1.0.1"
+    "modify-pkg-up": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/travis-cli": "^8.2.0",
+    "ava": "^2.4.0",
     "decache": "^4.5.1",
-    "del": "^4.0.0",
+    "del": "^5.1.0",
+    "husky": "^3.0.7",
     "mkdir-promise": "^1.0.0",
     "mock-require": "^3.0.3",
-    "read-pkg-up": "^5.0.0",
-    "simple-spy": "^2.2.1",
-    "standard": "^14.0.0",
-    "write-pkg": "^3.1.0"
+    "read-pkg-up": "^7.0.0",
+    "simple-spy": "^3.0.1",
+    "standard": "^14.3.1",
+    "standard-version": "^7.0.0",
+    "write-pkg": "^4.0.0"
   },
   "scripts": {
     "lint": "standard",
     "unit": "ava",
-    "test": "npm run lint && npm run unit"
+    "test": "npm run lint && npm run unit",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "repository": {
     "type": "git",

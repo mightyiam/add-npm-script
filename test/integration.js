@@ -34,7 +34,7 @@ const script = 'echo I exist, as well'
 
 const read = async () => {
   const pkg = await readPkgUp({ normalize: false })
-  return pkg.pkg
+  return pkg.packageJson
 }
 
 test.serial('adds a script', async t => {
