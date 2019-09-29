@@ -7,9 +7,13 @@
     "modify-pkg-up": "^1.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/travis-cli": "^8.2.0",
     "ava": "^2.1.0",
     "decache": "^4.5.1",
     "del": "^4.0.0",
+    "husky": "^3.0.7",
     "mkdir-promise": "^1.0.0",
     "mock-require": "^3.0.3",
     "read-pkg-up": "^5.0.0",
@@ -21,6 +25,12 @@
     "lint": "standard",
     "unit": "ava",
     "test": "npm run lint && npm run unit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "repository": {
     "type": "git",
